@@ -1,0 +1,208 @@
+/*==== Global ==== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.ul {
+    list-style: none;
+}
+
+body {
+    background: url(./images/aboutbg.jpg);
+}
+
+
+/* Events */
+.cards-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.card img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.card {
+    margin: 0 0.5em;
+    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+    border: none;
+    border-radius: 0;
+}
+
+.carousel-inner {
+    padding: 1em;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: #e1e1e1;
+    width: 5vh;
+    height: 5vh;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* about */
+.about {
+    padding-top: 130px;
+}
+
+.text {
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    color: darkmagenta;
+}
+
+@keyframes text {
+    0% {
+        color: black;
+        margin-bottom: -40px;
+    }
+
+    30% {
+        letter-spacing: 25px;
+        margin-bottom: -40px;
+    }
+
+    85% {
+        letter-spacing: 8px;
+        margin-bottom: -40px;
+    }
+}
+
+/* arati */
+.arati-jpg {
+    padding-top: 150px;
+}
+
+/* ashtak */
+.ashtak-jpg {
+    padding-top: 140px;
+}
+
+/* contact */
+.contact {
+    padding-top: 200px;
+}
+
+.ctn {
+    padding: 8px 35px;
+    background-color: white;
+    border-radius: 30px;
+    font-style: oblique;
+}
+
+/* gallery */
+#slider {
+    position: relative;
+    width: 700px;
+    height: 550px;
+    padding: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+}
+
+#slider ul {
+    position: relative;
+    list-style: none;
+    height: 100%;
+    width: 10000%;
+    padding: 0;
+    margin: 0;
+    transition: all 750ms ease;
+    left: 0;
+}
+
+#slider ul li {
+    position: relative;
+    height: 100%;
+
+    float: left;
+}
+
+#slider ul li img {
+    width: 700px;
+    height: 550px;
+}
+
+#slider #prev,
+#slider #next {
+    width: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    font-size: 2rem;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 150ms ease;
+}
+
+#slider #prev:hover,
+#slider #next:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    text-shadow: 0;
+}
+
+#slider #prev {
+    left: 10px;
+}
+
+#slider #next {
+    right: 10px;
+}
+
+/* granth */
+.pdftable{
+    padding-top: 140px;
+    padding-left: 30px;
+    width: 100%;
+}
+
+/* contact  */
+.greet{
+    padding-left: 10px;
+}
+/*Footer*/
+footer {
+    width: 100vw;
+    height: 20vh;
+    left: 30;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Creator*/
+.creator {
+    width: 100vw;
+    height: 30vh;
+    right: 30px;
+}
+
+/*Footer*/
+footer {
+    width: 100vw;
+    height: 20vh;
+    left: 30;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Creator*/
+.creator {
+    width: 100vw;
+    height: 30vh;
+    right: 30px;
+}

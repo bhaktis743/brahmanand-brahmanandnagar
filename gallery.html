@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="custom.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>brahmanand maharaj burungwadi palus</title>
+</head>
+
+<body>
+    <!-- code start here -->
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">ब्रह्मानंद चॅरिटेबल ट्रस्ट</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="/index.html">home<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/about.html">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/location.html">LOCATION</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="/arati.html">श्री ब्रह्मानंद महाराज आरती</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/ashtak.html">श्री ब्रह्मानंदाष्टक</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/granth.html">श्री ब्रह्मानंद महाराज ग्रंथ</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">GALLERY</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/videos.html">VIDEOS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/contact.html">CONTACT US</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--gallery section-->
+
+    <body>
+        <center>
+            <div id="slider">
+                <ul id="slideWrap">
+                    <li><img src="./images/logo.jpg" alt=""></li>
+                    <li><img src="./images/aashrammandap.jpg" alt=""></li>
+                    <li><img src="./images/logo2.jpg" alt=""></li>
+                    <li><img src="./images/tithi.jpg" alt=""></li>
+                    <li><img src="./images/aashram (1).jpg" alt=""></li>
+                    <li><img src="./images/shri.jpg" alt=""></li>
+                    <li><img src="./images/shri4.jpg" alt=""></li>
+                    <li><img src="./images/brahmanand5.jpg" alt=""></li>
+                    <li><img src="./images/brahmanand2.jpg" alt=""></li>
+                    <li><img src="./images/jatra (1) (1).jpg" alt=""></li>
+                    <li><img src="./images/maharaj.jpg" alt=""></li>
+                    <li><img src="./images/maharaj2.jpg" alt=""></li>
+                    <li><img src="./images/oldmaharaj.jpg" alt=""></li>
+                    <li><img src="./images/photo4.jpg" alt=""></li>
+                    <li><img src="./images/pic2.jpg" alt=""></li>
+                </ul>
+                <a id="prev" href="#">&#8810;</a>
+                <a id="next" href="#">&#8811;</a>
+            </div>
+        </center>
+    </body>
+
+    <!-- Optional JavaScript -->
+    <!--jscript-->
+    <script>
+        var responsiveSlider = function () {
+
+            var slider = document.getElementById("slider");
+            var sliderWidth = slider.offsetWidth;
+            var slideList = document.getElementById("slideWrap");
+            var count = 1;
+            var items = slideList.querySelectorAll("li").length;
+            var prev = document.getElementById("prev");
+            var next = document.getElementById("next");
+
+            window.addEventListener('resize', function () {
+                sliderWidth = slider.offsetWidth;
+            });
+
+            var prevSlide = function () {
+                if (count > 1) {
+                    count = count - 2;
+                    slideList.style.left = "-" + count * sliderWidth + "px";
+                    count++;
+                }
+                else if (count = 1) {
+                    count = items - 1;
+                    slideList.style.left = "-" + count * sliderWidth + "px";
+                    count++;
+                }
+            };
+
+            var nextSlide = function () {
+                if (count < items) {
+                    slideList.style.left = "-" + count * sliderWidth + "px";
+                    count++;
+                }
+                else if (count = items) {
+                    slideList.style.left = "0px";
+                    count = 1;
+                }
+            };
+
+            next.addEventListener("click", function () {
+                nextSlide();
+            });
+
+            prev.addEventListener("click", function () {
+                prevSlide();
+            });
+
+            setInterval(function () {
+                nextSlide()
+            }, 5000);
+
+        };
+
+        window.onload = function () {
+            responsiveSlider();
+        }
+    </script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+<!---footer-->
+
+<body>
+    <footer>
+        <div class="line"></div>
+        <p>प्रेषक :
+            ट्रस्ट रजि. नं.-३-२३७८ सांगली
+        </p>
+        <h1>श्री. ब्रम्हानंद चॅरिटेबल ट्रस्ट, बुरुंगवाडी,</h1>
+        <p>मु.ब्रम्हानंनदगर, पो. भिलवडी स्टेशनता, पलुस, जि. सांगली.
+            पिन - ४१६ ३०३. (०२३४६) २३३१९२ मो. ९७६६०७६५००, ९८६०४८१२४०</p>
+        <p></p>© Copyright 2014, All Rights Reserved</p>
+        <div class="Creator">
+            <h4><br>Created By</h4>
+            <h3>Bhakti Suryawanshi</h3>
+            <h4>
+                <p>Contact : www.suryavanshibhakti743@gmail.com</p>
+            </h4>
+            <div class="line"></div>
+        </div>
+    </footer>
+
+</html>
